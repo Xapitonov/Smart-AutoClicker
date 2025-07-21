@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2024 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <string name="dialog_title_billing" translatable="false">Klick'r Pro</string>
+
+    <string name="header_billing" translatable="false">Klick'r Pro</string>
+    <string name="header_starting_detection">Запуск обнаружения</string>
+
+    <string name="message_billing">Это приложение с открытым исходным кодом, созданное с любовью людьми, работающими в своё свободное время.\n\n
+Поддержите разработку, просмотрев рекламу, или приобретите Klick'r Pro, чтобы навсегда отключить рекламу!</string>
+    <string name="message_billing_success">Спасибо за покупку\nKlick'r Pro!</string>
+
+    <string name="button_text_watch_ad_loading">Загрузка рекламы</string>
+    <string name="button_text_watch_ad">См. рекламу</string>
+    <string name="button_text_watch_ad_error">Ошибка рекламы</string>
+    <string name="button_text_buy_pro_loading">Покупка Pro</string>
+    <string name="button_text_buy_pro">Купить Pro (%1$s)</string>
+    <string name="button_text_understood">Понятно</string>
+    <string name="button_text_buy_pro_error">Не удалось купить</string>
+    <string name="button_text_visit_github">Посетить наш GitHub</string>
+    <string name="button_text_trial">%1$d минут пробного периода</string>
+    <string name="button_text_buy_pro_pending">Ожидание транзакции</string>
+
+</resources>
