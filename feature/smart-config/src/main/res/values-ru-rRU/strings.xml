@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2024 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <!-- Generic =================================================================================================== -->
+    <!-- Эти значения используются в нескольких диалогах из-за их общего смысла, например, имя -->
+
+    <string name="generic_name">Имя</string>
+    <string name="generic_select_the_position">Выберите позицию</string>
+    <string name="generic_config">Настройки</string>
+    <string name="generic_counters">Счётчики</string>
+    <string name="generic_modify">Изменить</string>
+
+
+    <!-- Scenario Items ============================================================================================ -->
+
+    <string name="item_event_desc_enabled_children">Включено</string>
+    <string name="item_event_desc_disabled_children">Отключено</string>
+
+    <string name="item_image_condition_desc_threshold">%1$d%%</string>
+    <string name="item_image_condition_desc_complete_threshold">Разница: %1$d%%</string>
+
+    <string name="item_image_condition_visible">Видно</string>
+    <string name="item_image_condition_not_visible">Не видно</string>
+
+    <string name="item_counter_reached_title">При достижении счётчика</string>
+    <string name="item_counter_reached_desc">Проверить значение счётчика, изменяемого действием</string>
+    <string name="item_counter_reached_details">%1$s %2$s %3$s</string>
+
+    <string name="item_timer_reached_title">При срабатывании таймера</string>
+    <string name="item_timer_reached_desc">Выполняется после заданного времени с момента активации триггера</string>
+    <string name="item_timer_reached_details">%1$s после включения события</string>
+
+    <string name="item_broadcast_received_title">При получении трансляции</string>
+    <string name="item_broadcast_received_desc">Выполняется при получении трансляции</string>
+    <string name="item_broadcast_received_details">Получена трансляция %1$s</string>
+
+    <string name="item_copy_title">Копировать</string>
+    <string name="item_copy_desc">Скопировать существующее действие из любого сценария</string>
+
+    <string name="item_click_title">Нажатие</string>
+    <string name="item_click_desc">Нажать в любом месте экрана</string>
+    <string name="item_click_details_on_condition">В течение %1$s на %2$s</string>
+    <string name="item_click_details_at_position">В течение %1$s</string>
+
+    <string name="item_swipe_title">Смахивание</string>
+    <string name="item_swipe_desc">Смахнуть с одной позиции экрана на другую</string>
+    <string name="item_swipe_details">В течение %1$s</string>
+
+    <string name="item_pause_title">Ожидание</string>
+    <string name="item_pause_desc">Приостановить выполнение обнаружения</string>
+    <string name="item_pause_details">В течение %1$s</string>
+
+    <string name="item_change_counter_title">Изменить счётчик</string>
+    <string name="item_change_counter_desc">Изменить значение для последующей проверки</string>
+    <string name="item_change_counter_details">%1$s %2$s %3$s</string>
+    <string name="item_change_counter_details_error">Недопустимый счётчик</string>
+
+    <string name="item_toggle_event_title">Изменить состояние события</string>
+    <string name="item_toggle_event_desc">Изменить состояние включения события</string>
+    <string name="item_toggle_event_details_enable_all">Включить все</string>
+    <string name="item_toggle_event_details_disable_all">Отключить все</string>
+    <string name="item_toggle_event_details_invert_all">Инвертировать все</string>
+    <string name="item_toggle_event_details_manual">Изменить %1$d событий</string>
+    <string name="item_toggle_event_details_error">Целевое событие не найдено</string>
+
+    <string name="item_intent_title">Интент</string>
+    <string name="item_intent_desc">Взаимодействовать с другим приложением</string>
+    <string name="item_intent_details">Отправить %1$s</string>
+    <string name="item_intent_details_component_name">Отправить %1$s в %2$s</string>
+    <string name="item_intent_details_start_activity">Запустить %1$s</string>
+
+    <string name="item_notification_title">Уведомление</string>
+    <string name="item_notification_desc">Отправить уведомление на устройство</string>
+    <string name="item_notification_details_text">Отправить «%1$s»</string>
+    <string name="item_notification_details_counter">Отправить значение %1$s</string>
+
+
+    <!-- Dialog Copy =============================================================================================== -->
+
+    <string name="search_view_hint_event_copy">Поиск по названию события</string>
+    <string name="search_view_hint_action_copy">Поиск по названию действия</string>
+    <string name="search_view_hint_condition_copy">Поиск по названию условия</string>
+
+    <string name="list_header_copy_conditions_this">Условия этого события</string>
+    <string name="list_header_copy_conditions_all">Условия всех событий</string>
+
+    <string name="list_header_copy_action_this">Действия этого события</string>
+    <string name="list_header_copy_action_all">Действия других событий</string>
+
+    <string name="list_header_copy_event_this">События этого сценария</string>
+    <string name="list_header_copy_event_all">События всех сценариев</string>
+
+
+    <!-- Dialog Scenario =========================================================================================== -->
+
+    <string name="dialog_title_scenario_config">Сценарий</string>
+
+    <string name="message_empty_screen_event_title">События экрана отсутствуют!</string>
+    <string name="message_empty_screen_event_desc">Событие экрана содержит набор действий, выполняющихся при обнаружении определённого условия на экране.\nВ вашем сценарии должен быть хотя бы один экранный или триггерный событие для его выполнения.</string>
+    <string name="message_empty_trigger_event_list_title">Триггерные события отсутствуют!</string>
+    <string name="message_empty_trigger_event_list_desc">Триггерное событие содержит набор действий, выполняющихся при выполнении набора условий.\nВ вашем сценарии должен быть хотя бы один экранный или триггерный событие для его выполнения.</string>
+
+    <string name="menu_item_title_image_events">Экран</string>
+    <string name="menu_item_title_trigger_events">Триггеры</string>
+    <string name="menu_item_title_more">Ещё</string>
+
+    <string name="field_scenario_quality_title">Разрешение обнаружения</string>
+    <string name="field_scenario_quality_description">Для ускорения обнаружения Klick'r уменьшает разрешение изображений перед их анализом.\n\nЕсли вы увеличите разрешение, обнаружение станет медленнее, но точнее. Если уменьшите разрешение — обнаружение будет быстрее, но менее точным. Найдите оптимальный баланс между разрешением обнаружения и порогами условий для максимальной эффективности ваших сценариев!</string>
+    <string name="field_scenario_quality_resolution" translatable="false">%1$d x %2$d</string>
+
+    <string name="field_show_debug_view_title">Показать режим отладки</string>
+    <string name="item_title_debug_generate_report">Создать отчёт</string>
+
+    <string name="field_show_debug_report_title">Показать отчёт</string>
+    <string name="field_show_debug_report_desc_available">Отчёт об отладке доступен</string>
+    <string name="field_show_debug_report_desc_not_available">Отчёт об отладке отсутствует</string>
+
+    <string name="field_tutorial_title">Руководство</string>
+    <string name="field_tutorial_desc">Изучите, как использовать Klick'r</string>
+
+
+    <!-- Dialog Event ============================================================================================== -->
+
+    <string name="dialog_title_image_event">Событие экрана</string>
+    <string name="dialog_title_trigger_event">Триггер</string>
+    <string name="dialog_title_action_type">Тип действия</string>
+    <string name="dialog_title_trigger_condition_type">Тип триггера</string>
+
+    <string name="field_condition_selector_desc">%1$d условий</string>
+    <string name="message_empty_screen_condition_list_title">Условия экрана отсутствуют!</string>
+    <string name="message_empty_screen_condition_list_desc">Условие экрана — это часть скриншота, которую будут искать на каждом кадровом изображении вашего экрана.</string>
+    <string name="message_empty_trigger_condition_list_title">Условия отсутствуют!</string>
+    <string name="message_empty_trigger_condition_list_desc">Условие — это пользовательский критерий для запуска действия.</string>
+    <string name="message_empty_action_list_title">Действия отсутствуют!</string>
+    <string name="message_empty_action_list_desc">Действие — это взаимодействие (нажатие, смахивание и т.п.) с вашим телефоном, запускаемое при выполнении условий.</string>
+
+    <string name="menu_item_title_conditions">Условия</string>
+    <string name="menu_item_title_actions">Действия</string>
+
+    <string name="field_event_state_title">Состояние</string>
+    <string name="field_event_state_desc_enabled">Это событие будет обрабатываться как обычно при запуске сценария</string>
+    <string name="field_event_state_desc_disabled">Это событие будет обработано только если оно включится действием во время выполнения сценария</string>
+
+    <string name="field_event_keep_detecting_title">Продолжать выполнение</string>
+    <string name="field_event_keep_detecting_desc_enabled">При срабатывании этого события продолжать выполнение со следующего события в списке</string>
+    <string name="field_event_keep_detecting_desc_disabled">При срабатывании этого события начать выполнение заново с первого события в списке</string>
+
+    <string name="field_operator_title">Оператор</string>
+    <string name="field_operator_button_and" translatable="false">AND</string>
+    <string name="field_operator_button_or" translatable="false">OR</string>
+    <string name="field_operator_desc_or">Для запуска действий должна быть выполнена хотя бы одна из условий</string>
+    <string name="field_operator_desc_and">Для запуска действий должны быть выполнены все условия</string>
+
+
+    <!-- Brief overlays ============================================================================================ -->
+
+    <string name="brief_empty_actions">Нет действий. Для создания события необходимо как минимум одно действие</string>
+    <string name="brief_empty_image_conditions">Нет условий экрана. Для создания события необходимо как минимум одно условие</string>
+
+
+    <!-- Dialog Condition Image ==================================================================================== -->
+
+    <string name="dialog_title_condition_config">Условие</string>
+
+    <string name="field_condition_visibility_title">Видимость</string>
+    <string name="field_condition_visibility_desc_present">Условие должно быть обнаружено</string>
+    <string name="field_condition_visibility_desc_absent">Условие не должно быть обнаружено</string>
+
+    <string name="field_detection_type_title">Тип обнаружения</string>
+    <string name="field_detection_type_desc_exact">Обнаружение строго в захваченной позиции</string>
+    <string name="field_detection_type_desc_screen">Обнаружение по всему экрану</string>
+    <string name="field_detection_type_desc_area">Обнаружение в выбранной области</string>
+
+    <string name="field_select_detection_area_title">Область обнаружения</string>
+    <string name="field_select_detection_area_desc">В [%1$d, %2$d, %3$d, %4$d]</string>
+
+    <string name="field_title_condition_threshold">Допустимая разница</string>
+
+
+    <!-- Dialog Condition Counter Reached ========================================================================== -->
+
+    <string name="dialog_title_counter_reached">Значение счётчика</string>
+
+    <string name="field_counter_name_label">Имя счётчика</string>
+
+    <string name="field_counter_comparison_value_label">Значение</string>
+
+    <string name="dropdown_comparison_operator_label">Оператор</string>
+    <string name="dropdown_comparison_operator_item_greater_or_equals" translatable="false">≥</string>
+    <string name="dropdown_comparison_operator_item_greater" translatable="false"><![CDATA[>]]></string>
+    <string name="dropdown_comparison_operator_item_equals" translatable="false">=</string>
+    <string name="dropdown_comparison_operator_item_lower_or_equals" translatable="false">≤</string>
+    <string name="dropdown_comparison_operator_item_lower" translatable="false"><![CDATA[<]]></string>
+
+
+    <!-- Dialog Condition Timer Reached ============================================================================ -->
+
+    <string name="dialog_title_timer_reached">Таймер сработал</string>
+
+    <string name="input_field_label_timer_duration_no_unit">Через</string>
+
+    <string name="field_timer_restart_title">Перезапуск при срабатывании</string>
+    <string name="field_timer_restart_desc_on">После срабатывания таймер перезапускается и условие может выполниться снова</string>
+    <string name="field_timer_restart_desc_off">После срабатывания таймер не перезапускается, условие может выполниться только один раз</string>
+
+
+    <!-- Dialog Condition broadcast received ======================================================================= -->
+
+    <string name="dialog_title_broadcast_received">Получена трансляция</string>
+
+
+    <!-- Dialog Action Click ======================================================================================= -->
+
+    <string name="dialog_title_click">Нажатие</string>
+    <string name="dialog_title_condition_selection">Выберите условие</string>
+
+    <string name="field_click_type_title">Нажать на</string>
+    <string name="field_click_type_desc_on_condition">Нажать на обнаруженное условие</string>
+    <string name="field_click_type_desc_on_position">Нажать на выбранную позицию</string>
+
+    <string name="field_condition_selection_title_and_operator">Нажать на условие</string>
+    <string name="field_condition_selection_desc_and_operator">%1$s</string>
+    <string name="field_condition_selection_desc_and_operator_not_found">Условие не выбрано</string>
+
+    <string name="field_condition_selection_title_or_operator">Нажать на первое обнаруженное условие</string>
+    <string name="field_condition_selection_desc_or_operator">Событие настроено на «Одно условие», нельзя выбрать конкретное</string>
+
+    <string name="field_click_position_desc">Нажать на %1$d, %2$d</string>
+
+    <string name="field_click_offset_title">Смещение нажатия</string>
+    <string name="field_click_offset_desc_none">Отсутствует</string>
+    <string name="field_click_offset_desc" translatable="false">X=%1$d Y=%2$d</string>
+    <string name="field_click_offset_x" translatable="false">X</string>
+    <string name="field_click_offset_y" translatable="false">Y</string>
+
+
+    <!-- Dialog Action Swipe ======================================================================================= -->
+
+    <string name="dialog_title_swipe">Смахивание</string>
+
+    <string name="field_swipe_positions_title">Позиции смахивания</string>
+    <string name="field_swipe_positions_desc">Смахнуть с %1$d, %2$d на %3$d, %4$d</string>
+
+
+    <!-- Dialog Action Pause ======================================================================================= -->
+
+    <string name="dialog_title_pause">Ожидание</string>
+
+
+    <!-- Dialog Action Intent ====================================================================================== -->
+
+    <string name="dialog_title_intent" translatable="false">Intent</string>
+    <string name="dialog_title_intent_flags" translatable="false">Флаги</string>
+    <string name="dialog_title_intent_actions" translatable="false">Действия Intent</string>
+    <string name="dialog_title_intent_component_name" translatable="false">Имя компонента</string>
+    <string name="dialog_title_application_selection">Выбор приложения</string>
+
+    <string name="menu_item_title_advanced">Расширенные</string>
+    <string name="menu_item_title_simple">Простые</string>
+
+    <string name="field_application_selection_title">Выберите приложение</string>
+    <string name="field_application_selection_desc">Запустить приложение при выполнении этого действия</string>
+
+    <string name="dropdown_intent_sending_type_label">Тип</string>
+    <string name="dropdown_intent_sending_type_item_activity" translatable="false">Запустить Активити</string>
+    <string name="dropdown_intent_sending_type_item_broadcast" translatable="false">Отправить Broadcast</string>
+
+    <string name="field_intent_action_label" translatable="false">Действие</string>
+    <string name="field_intent_broadcast_action_label" translatable="false">Действие Broadcast</string>
+    <string name="field_intent_flags_label" translatable="false">Флаги</string>
+    <string name="field_intent_component_name_label" translatable="false">Имя компонента</string>
+
+    <string name="field_intent_extra_title" translatable="false">Параметры</string>
+
+
+    <!-- Dialogs Intent Extras ===================================================================================== -->
+
+    <string name="dialog_intent_extra_title" translatable="false">Параметр</string>
+
+    <string name="field_intent_extra_key_label">Ключ</string>
+    <string name="field_intent_extra_value_title">Значение</string>
+
+    <string name="dropdown_intent_extra_type_title">Тип значения</string>
+    <string name="dropdown_intent_extra_type_item_boolean" translatable="false">Логический</string>
+    <string name="dropdown_intent_extra_type_item_byte" translatable="false">Байт</string>
+    <string name="dropdown_intent_extra_type_item_char" translatable="false">Символ</string>
+    <string name="dropdown_intent_extra_type_item_double" translatable="false">Дробное число (double)</string>
+    <string name="dropdown_intent_extra_type_item_int" translatable="false">Целое число</string>
+    <string name="dropdown_intent_extra_type_item_float" translatable="false">Число с плавающей точкой</string>
+    <string name="dropdown_intent_extra_type_item_short" translatable="false">Короткое</string>
+    <string name="dropdown_intent_extra_type_item_string" translatable="false">Строка</string>
+
+    <string name="dropdown_extra_boolean_item_true" translatable="false">Истина</string>
+    <string name="dropdown_extra_boolean_item_false" translatable="false">Ложь</string>
+
+
+    <!-- Dialog Action Change Counter ============================================================================== -->
+
+    <string name="dialog_title_change_counter">Изменение счётчика</string>
+
+    <string name="message_empty_counter_name_list_title">Счётчики не заданы</string>
+    <string name="message_empty_counter_name_list_desc">Счётчики создаются с помощью действия "Изменить счётчик" или условия "Достигнут счётчик"</string>
+
+    <string name="field_counter_operation_value_label">Значение</string>
+
+    <string name="dropdown_counter_operation_label">Операция</string>
+    <string name="dropdown_counter_operation_item_add" translatable="false">+</string>
+    <string name="dropdown_counter_operation_item_set" translatable="false">=</string>
+    <string name="dropdown_counter_operation_item_minus" translatable="false">-</string>
+
+
+    <!-- Dialogs Action ToggleEvent ================================================================================ -->
+
+    <string name="dialog_title_toggle_event">Состояние события</string>
+    <string name="dialog_title_events_toggle">Переключение событий</string>
+
+    <string name="list_header_image_events">События экрана</string>
+    <string name="list_header_trigger_events">Триггерные события</string>
+
+    <string name="field_change_all_title">Изменить все</string>
+    <string name="field_change_all_desc_manual">Выберите события для изменения вручную</string>
+    <string name="field_change_all_desc_enable_all">Включить все события в этом сценарии</string>
+    <string name="field_change_all_desc_invert_all">Инвертировать состояние всех событий в сценарии</string>
+    <string name="field_change_all_desc_disable_all">Отключить все события в сценарии. Когда все события отключены, сценарий автоматически останавливается.</string>
+
+    <string name="field_select_toggle_events_title">%1$d изменений</string>
+    <string name="field_select_toggle_events_title_empty">Нет изменений</string>
+    <string name="field_select_toggle_events_desc_empty">Выберите хотя бы одно событие для изменения состояния</string>
+
+
+    <!-- Dialogs Notification ===================================================================================== -->
+
+    <string name="dialog_title_notification">Уведомление</string>
+
+    <string name="field_notification_title_label">Заголовок</string>
+
+    <string name="field_notification_message_title">Сообщение</string>
+    <string name="field_dropdown_notification_message_type_title">Тип</string>
+    <string name="field_dropdown_item_notification_message_type_text">Текст</string>
+    <string name="field_dropdown_item_notification_message_type_counter">Значение счётчика</string>
+    <string name="field_notification_message_text_label">Содержимое</string>
+    <string name="field_notification_message_counter_label">Имя счётчика</string>
+
+    <string name="field_dropdown_notification_importance_title">Важность</string>
+    <string name="field_dropdown_item_notification_importance_type_low">Низкая</string>
+    <string name="field_dropdown_item_notification_importance_type_low_desc">Без звука.</string>
+    <string name="field_dropdown_item_notification_importance_type_default">Обычная</string>
+    <string name="field_dropdown_item_notification_importance_type_default_desc">Со звуком.</string>
+    <string name="field_dropdown_item_notification_importance_type_high">Высокая</string>
+    <string name="field_dropdown_item_notification_importance_type_high_desc">Со звуком и отображается сверху.</string>
+
+    <string name="button_notification_config">Открыть настройки</string>
+    <string name="message_notification_config">Поведение уведомлений зависит от операционной системы вашего устройства. Вы можете настроить уведомления в настройках устройства.</string>
+
+    <!-- Dialogs warning/error ===================================================================================== -->
+
+    <string name="warning_dialog_message_toggle_action_from_another_scenario">Это событие содержит одно или несколько действий переключения событий, ссылающихся на событие из другого сценария.\nВам нужно обновить их целевые события перед сохранением сценария.</string>
+    <string name="warning_dialog_message_event_delete_associated_action">Это событие имеет одно или несколько связанных с ним действий. Удаление события приведёт к удалению связанных действий.\nВы уверены?</string>
+    <string name="warning_dialog_message_condition_delete_associated_action">Это условие имеет одно или несколько связанных с ним действий. Удаление условия приведёт к удалению связанных действий.\nВы уверены?</string>
+    <string name="warning_dialog_message_close_without_saving">У вас есть несохранённые изменения, хотите их отменить?</string>
+
+    <string name="error_dialog_message_scenario_saving">Ваш сценарий не может быть сохранён из-за внутренней ошибки.\nХотите изменить его или отменить все изменения?</string>
+    <string name="error_dialog_message_error_native_lib">Klick'r установлен неправильно и не может начать обнаружение.\n\nЕсли вы установили приложение из официального магазина, пожалуйста, свяжитесь с нами на GitHub — это поможет нам исправить проблему.</string>
+
+    <!-- Content description ======================================================================================= -->
+    <!-- Используются как тексты для людей с нарушениями зрения, не отображаются на экране, а озвучиваются. -->
+
+    <string name="content_desc_event_state">Состояние события</string>
+    <string name="content_desc_conditions_count">Количество условий в этом событии</string>
+    <string name="content_desc_actions_count">Количество действий в этом событии</string>
+    <string name="content_desc_image_condition">Изображение для обнаружения</string>
+    <string name="content_desc_open_event_list">Открыть список событий</string>
+    <string name="content_desc_application_icon">Иконка приложения для запуска.</string>
+
+</resources>
