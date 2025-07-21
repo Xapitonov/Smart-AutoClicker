@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2023 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <!--
+      - Заголовки для диалогов, отображаемых как оверлей.
+      - Количество символов может быть ограничено из-за кнопок сохранения/удаления/закрытия.
+      -->
+    <string name="dialog_overlay_title_debug_report">Отчёт об отладке</string>
+
+    <!--
+      - Тексты для пунктов в списке или вертикальной разметке.
+      -  * Заголовок должен быть коротким и ёмким.
+      -  * Описание может быть более развёрнутым.
+      -  * Ошибки занимают то же место, что и описание.
+      -->
+    <string name="item_title_report_total_duration">Общая длительность</string>
+    <string name="item_title_report_image_processed">Обработано изображений</string>
+    <string name="item_title_report_avg_image_processing_duration">Среднее время обработки</string>
+    <string name="item_title_report_total_event_trigger_count">Запущено событий</string>
+    <string name="item_title_report_detection_count">Обнаружено условий</string>
+
+    <!--
+      - Заголовки разделов.
+      - Должны быть короткими и ёмкими.
+      -->
+    <string name="section_title_report_timing_min">Мин</string>
+    <string name="section_title_report_timing_max">Макс</string>
+    <string name="section_title_report_timing_avg">Сред</string>
+    <string name="section_title_report_event_trigger_count">Запущено</string>
+    <string name="section_title_report_event_processing_count">Обработано</string>
+    <string name="section_title_report_condition_detected_count">Обнаружено</string>
+    <string name="section_title_report_condition_processing_count">Обработано</string>
+    <string name="section_title_report_timing_title">Время обработки</string>
+    <string name="section_title_report_confidence_title">Достоверность обнаружения</string>
+
+    <!-- Тексты оверлея -->
+    <string name="overlay_title_results">Результаты</string>
+    <string name="overlay_title_threshold">Порог</string>
+
+    <!--
+      - Следующие строки должны остаться одинаковыми во всех языках.
+      - НЕ ПЕРЕВОДИТЬ.
+      -->
+    <string name="item_title_debug_report_trigger_processed" translatable="false">%1$s / %2$s</string>
+
+</resources>
