@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* Copyright (C) 2023 Kevin Buzeau
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+
+    <!--
+      - Заголовки для диалогов, отображаемых как оверлей.
+      - Количество символов может быть ограничено из-за кнопок сохранения/удаления/закрытия.
+      -->
+    <string name="dialog_overlay_title_dumb_action_type">Тип действия</string>
+    <string name="dialog_overlay_title_dumb_scenario_config">Сценарий</string>
+
+    <!--
+      - Тексты для пунктов меню.
+      - Должны быть короткими и ёмкими.
+      -->
+    <string name="menu_item_title_dumb_actions">Действия</string>
+    <string name="menu_item_title_dumb_config">Настройки</string>
+
+    <!--
+      - Тексты для пунктов в списке или вертикальной разметке.
+      -  * Заголовок должен быть коротким и ёмким.
+      -  * Описание может быть более развёрнутым.
+      -  * Ошибки занимают то же место, что и описание.
+      -->
+    <string name="item_desc_dumb_action_duration">В течение %1$s</string>
+    <string name="item_desc_dumb_click">Нажать в любом месте экрана</string>
+    <string name="item_desc_dumb_click_details">В течение %1$s по координатам [%2$d, %3$d]</string>
+    <string name="item_desc_dumb_click_on_position">Нажать в %1$d, %2$d</string>
+    <string name="item_desc_dumb_pause">Пауза выполнения</string>
+    <string name="item_desc_dumb_pause_details">В течение %1$s</string>
+    <string name="item_desc_dumb_repeat_count">Повторить %1$d раз</string>
+    <string name="item_desc_dumb_repeat_infinite">Бесконечное повторение</string>
+    <string name="item_desc_dumb_swipe">Смахнуть с одной позиции экрана на другую</string>
+    <string name="item_desc_dumb_swipe_details">В течение %1$s с [%2$d, %3$d] до [%4$d, %5$d]</string>
+    <string name="item_desc_dumb_swipe_positions">Смахнуть с %1$d, %2$d на %3$d, %4$d</string>
+    <string name="item_title_dumb_click">Нажатие</string>
+    <string name="item_title_dumb_pause">Ожидание</string>
+    <string name="item_title_dumb_swipe">Смахивание</string>
+    <string name="item_title_no_dumb_actions">Нет действий</string>
+    <string name="item_title_dumb_action_copy">Копировать</string>
+    <string name="item_desc_dumb_action_copy">Скопировать существующее действие из любого сценария</string>
+
+    <!--
+      - Сообщения для пустых списков.
+      - Виджеты могут отображать тексты любой длины, но лучше быть краткими.
+      -->
+    <string name="message_empty_dumb_action_list">Действия не созданы!</string>
+    <string name="message_empty_secondary_dumb_action_list">Для запуска сценария нужно хотя бы одно действие</string>
+
+    <!--
+      - Сообщения.
+      - Виджеты могут отображать тексты любой длины.
+      -->
+    <string name="message_dumb_brief_empty_action_list">Для выполнения сценария нужно хотя бы одно действие</string>
+
+    <!--
+      - Заголовки списков.
+      - Отображаются в одну строку.
+      -->
+    <string name="list_header_copy_dumb_action_this">Действия из этого сценария</string>
+    <string name="list_header_copy_dumb_action_all">Действия из всех сценариев</string>
+
+    <!--
+      - Подсказка для SearchView.
+      - Отображается в одну строку.
+      -->
+    <string name="search_view_hint_dumb_action_copy">Поиск по названию действия</string>
+
+
+    <!--
+      - Надписи для полей ввода и сообщения об ошибках.
+      - Должны быть короткими и ёмкими.
+      -->
+    <string name="input_field_label_maximum_duration">Максимальная длительность (минуты)</string>
+    <string name="input_field_label_repeat_count">Количество повторов</string>
+    <string name="input_field_label_repeat_delay">Задержка между повторами (мс)</string>
+
+    <!--
+      - Описания для доступности.
+      - Используются для слабовидящих, не отображаются, а озвучиваются.
+      -->
+    <string name="content_desc_add_action">Добавить новое действие в сценарий</string>
+    <string name="content_desc_show_actions">Показать или скрыть созданные действия</string>
+    <string name="content_desc_open_action_list">Открыть список действий</string>
+
+    <!--
+      - Следующие строки должны остаться одинаковыми во всех языках.
+      - НЕ ПЕРЕВОДИТЬ.
+      -->
+    <string name="title_action_count" translatable="false">%1$d/%2$d</string>
+</resources>
