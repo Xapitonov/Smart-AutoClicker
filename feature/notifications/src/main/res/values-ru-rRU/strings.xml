@@ -25,7 +25,7 @@
 
     <string name="notification_title">Сценарий: %1$s</string>
     <string name="notification_message">Нажмите, чтобы изменить сценарий</string>
-    <string name="notification_button_play">Запустить</string>
+    <string name="notification_button_play">Пуск</string>
     <string name="notification_button_pause">Пауза</string>
     <string name="notification_button_show">Показать</string>
     <string name="notification_button_hide">Скрыть</string>
